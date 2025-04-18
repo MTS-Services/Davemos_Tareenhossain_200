@@ -8,3 +8,280 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1340px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* 1️⃣ hero section ✅ */
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.884) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.cimb.com.my/content/dam/cimb/personal/images/malaysia/life-goals/save/4-ways-to-spend-money-wisely-according-to-billionaires-/how-to-spend-wisely-body-3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+}
+.hero-content h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: #ff5252;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero::before {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .hero-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    max-width: 100%;
+  }
+
+  .hero-content p {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+/* 2️⃣ why-allied section ✅ */
+.why-allied-section {
+  padding: 100px 20px;
+}
+
+.why-allied-section h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: #333;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.benefit-item {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.benefit-item h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #222;
+}
+
+.benefit-item p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .benefit-item {
+    margin-bottom: 25px;
+  }
+
+  .benefit-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* 3️⃣ about section ✅ */
+.recognizing-section {
+  padding: 80px 0;
+}
+
+/* Two Column Layout */
+.two-column-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Text column slightly wider */
+  gap: 60px;
+}
+
+/* Text Content Styling */
+.recognizing-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.recognizing-title {
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.recognizing-intro-text {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 64px;
+}
+
+/* Awards Styling */
+.awards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.award-item {
+  padding-bottom: 20px;
+}
+
+.award-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.award-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.award-description {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Image Styling */
+.image-content {
+  position: sticky;
+  top: 20px; /* Creates sticky effect when scrolling */
+  height: fit-content;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .two-column-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .image-content {
+    position: static;
+    order: -1;
+  }
+
+  .about-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .award-title {
+    font-size: 1.2rem;
+  }
+}
