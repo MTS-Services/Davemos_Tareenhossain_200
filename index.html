@@ -8,37 +8,42 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- 1️⃣ hero section ✅-->
-    <section class="hero-section">
+    <!-- 1️⃣ Hero section ✅-->
+    <section class="hero__section">
       <div class="container">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-          <div class="hero-text">
-            <h2>Join Allied:</h2>
-            <h1>A Remote Workplace Where You Can Thrive</h1>
-            <p>
-              Allied recognizes that great talent can work from anywhere. Our
-              remote culture empowers you to balance your professional and
-              personal life while collaborating with a dynamic team dedicated to
-              making a difference. If you’re looking for a place to grow your
-              career, Allied is the perfect fit!
-            </p>
-          </div>
+        <div class="hero__background"></div>
+        <div class="hero__content">
+          <h2>Join Allied:</h2>
+          <h1>
+            A Remote <br />
+            Workplace <br />
+            Where You <br />
+            Can Thrive
+          </h1>
+          <p>
+            Allied recognizes that great talent can work from anywhere. Our
+            remote culture empowers you to balance your professional and
+            personal life while collaborating with a dynamic team dedicated to
+            making a difference. If you’re looking for a place to grow your
+            career, Allied is the perfect fit!
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- 2️⃣ why-allied section ✅-->
-    <section class="why-allied-section">
+    <!-- 2️⃣ Why-allied section ✅-->
+    <section class="why-allied">
       <div class="container">
-        <h2>Why Work At Allied?</h2>
+        <h2 class="why-allied__title">Why Work At Allied?</h2>
 
-        <div class="benefits-grid">
+        <div class="why-allied__grid">
           <!-- First Row -->
-          <div class="row">
-            <div class="benefit-item">
-              <h3>Outstanding Employee Engagement</h3>
-              <p>
+          <div class="why-allied__row">
+            <div class="why-allied__item">
+              <h3 class="why-allied__item-title">
+                Outstanding Employee Engagement
+              </h3>
+              <p class="why-allied__item-text">
                 Our strong employee engagement score reflects our commitment to
                 a positive, fulfilling work environment. We prioritize listening
                 to our team members, ensuring that everyone feels valued and
@@ -46,9 +51,9 @@
               </p>
             </div>
 
-            <div class="benefit-item">
-              <h3>Remote Work Culture</h3>
-              <p>
+            <div class="why-allied__item">
+              <h3 class="why-allied__item-title">Remote Work Culture</h3>
+              <p class="why-allied__item-text">
                 As a remote company, we provide the flexibility you need to
                 excel in your role while enjoying a healthy work-life balance.
                 Our virtual workspace is designed to foster collaboration and
@@ -58,10 +63,10 @@
           </div>
 
           <!-- Second Row -->
-          <div class="row">
-            <div class="benefit-item">
-              <h3>Culture Committee</h3>
-              <p>
+          <div class="why-allied__row">
+            <div class="why-allied__item">
+              <h3 class="why-allied__item-title">Culture Committee</h3>
+              <p class="why-allied__item-text">
                 Our Culture Committee is dedicated to continuously improving our
                 workplace environment. This team organizes events, gathers
                 feedback, and champions initiatives that enhance our company
@@ -69,9 +74,9 @@
               </p>
             </div>
 
-            <div class="benefit-item">
-              <h3>Fostering Innovation</h3>
-              <p>
+            <div class="why-allied__item">
+              <h3 class="why-allied__item-title">Fostering Innovation</h3>
+              <p class="why-allied__item-text">
                 We believe that varied perspectives fuel innovation. Allied is
                 committed to building a workforce that reflects a wide range of
                 backgrounds and experiences where everyone can share their
@@ -83,17 +88,19 @@
       </div>
     </section>
 
-    <!-- 3️⃣ about section ✅-->
-    <section class="recognizing-section">
+    <!-- 3️⃣ Recognizing section ✅-->
+    <section class="recognizing">
       <div class="container">
-        <div class="two-column-grid">
-          <!-- Left Column - Text Content -->
-          <div class="recognizing-text-content">
-            <h2 class="recognizing-title">Recognizing Our Stars</h2>
-            <p class="recognizing-intro-text">
-              Allied celebrates the achievements and contributions of our team
-              members through various recognition programs:
-            </p>
+        <div class="reco-grid">
+          <!-- Left Column - Content -->
+          <div class="reco-content-left">
+            <div class="reco-header">
+              <h2 class="reco-title">Recognizing Our Stars</h2>
+              <p class="reco-description">
+                Allied celebrates the achievements and contributions of our team
+                members through various recognition programs:
+              </p>
+            </div>
 
             <div class="awards-container">
               <div class="award-item">
@@ -133,12 +140,91 @@
           </div>
 
           <!-- Right Column - Image -->
-          <div class="image-content">
+          <div class="reco-content-right">
             <img
               src="/image/Recognizing.png"
               alt="Allied team collaborating"
-              class="feature-image"
+              class="reco-feature-image"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ Offer section ✅-->
+    <section class="offer-section">
+      <div class="offer-left"></div>
+      <div class="offer-right">
+        <h2 class="offer-title">What We Offer</h2>
+        <ul class="offer-list">
+          <li class="offer-item">
+            Competitive compensation and benefits packages
+          </li>
+          <li class="offer-item">
+            Professional development and continuous learning and growth
+            opportunities
+          </li>
+          <li class="offer-item">
+            A supportive, engaging, and fun virtual workplace culture
+          </li>
+          <li class="offer-item">
+            Opportunities to work on meaningful projects that have a real
+            impact.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5️⃣ Join section ✅-->
+    <section class="join-section">
+      <div class="container">
+        <div class="two-column-grid">
+          <!-- Left Column - Text Content -->
+          <div class="join-text-content">
+            <h2 class="join-title">Join Us!</h2>
+            <p class="join-intro-text">
+              Ready to be part of a remote team that values your contributions?
+              Explore our open positions and discover how you can make a
+              difference at Allied. Together, we're building a brighter future -
+              one employee at a time.
+            </p>
+          </div>
+
+          <!-- Right Column - Image -->
+          <div class="join-image-content">
+            <img
+              src="/image/Join.png"
+              alt="Allied team collaborating"
+              class="join-feature-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6️⃣ Career section ✅-->
+    <section class="career-box">
+      <div class="container">
+        <h2 class="career-title">Career</h2>
+        <div class="career-content">
+          <div class="job-container">
+            <div class="job-header">Available Job</div>
+            <p class="job-text">
+              Explore exciting career opportunities with Allied. You'll be
+              redirected to our official careers portal to view and apply for
+              available positions.
+            </p>
+            <div class="job-button-container">
+              <a href="#" class="job-button"> See Available Jobs </a>
+            </div>
+            <p class="job-note">
+              <em>
+                Please note: Submission of your resume does not constitute an
+                application.<br />
+                We will contact qualified candidates whose skills match our
+                current openings.
+              </em>
+            </p>
           </div>
         </div>
       </div>
