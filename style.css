@@ -165,20 +165,22 @@ p {
 }
 
 .why-allied__item-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #2c3e50;
 }
 
 .why-allied__item-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
   text-decoration: none;
 }
 
 /*========= 📕 Responsive Adjustments ============= */
 @media (max-width: 768px) {
   .why-allied {
-    padding: 50px 10px 50px 10px;
+    padding: 50px 20px 50px 20px;
   }
 
   .why-allied__title {
@@ -235,17 +237,17 @@ p {
 }
 
 .reco-title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #2c3e50;
 }
 
 .reco-description {
-  font-size: larger;
-  color: #2c3e50;
-  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
 }
 
 /* ==== Awards Styling ==== */
@@ -265,13 +267,14 @@ p {
 }
 
 .award-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #2c3e50;
 }
 
 .award-description {
+  font-size: 1.4rem;
   margin-right: 0;
 }
 
@@ -306,7 +309,7 @@ p {
 
   .reco-description {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 2rem;
   }
 
@@ -326,7 +329,8 @@ p {
   }
 
   .award-description {
-    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.8;
   }
 
   .reco-content-right {
@@ -342,7 +346,7 @@ p {
 
 /*========= 💻 OFFER SECTION ============= */
 .offer-section {
-  padding: 100px 0 100px 0;
+  padding: 100px 200px 100px 0px;
   display: flex;
   gap: 40px;
 }
@@ -395,7 +399,7 @@ p {
 
 .offer-list {
   list-style: none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 
@@ -403,8 +407,8 @@ p {
   padding: 5px 0;
   color: #7a7979;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1;
+  font-size: 1.4rem;
+  line-height: 1.8;
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
@@ -413,8 +417,9 @@ p {
 .offer-item::before {
   content: '°';
   position: absolute;
-  left: 0;
-  color: #2c3e50;
+  left: 0px;
+  top: 10px;
+  color: #7a7979;
   font-weight: bold;
 }
 
@@ -442,6 +447,7 @@ p {
 
   .offer-title {
     font-size: 2rem;
+    margin-bottom: 0rem;
   }
 
   .offer-item {
