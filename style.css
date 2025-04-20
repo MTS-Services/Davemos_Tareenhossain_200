@@ -36,7 +36,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px 0 20px;
+  padding: 100px 20px 100px 20px;
 }
 
 .hero__section::before {
@@ -66,6 +66,7 @@ p {
   background-image: url('https://www.cimb.com.my/content/dam/cimb/personal/images/malaysia/life-goals/save/4-ways-to-spend-money-wisely-according-to-billionaires-/how-to-spend-wisely-body-3.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero__content {
@@ -102,16 +103,23 @@ p {
 
 /*========= 📕 Responsive Adjustments ============= */
 @media (max-width: 768px) {
+  .hero__section {
+    padding: 100px 20px 100px 20px;
+    min-height: auto;
+  }
+
   .hero__section::before {
     background: linear-gradient(
       360deg,
-      rgba(0, 0, 0, 0.7) 0%,
+      rgb(0, 0, 0) 0%,
       rgba(0, 0, 0, 0.11) 50%
     );
   }
 
-  .hero__section {
-    padding: 0 10px 0 10px;
+  .hero__background {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 
   .hero__content h2 {
@@ -393,8 +401,10 @@ p {
 
 .offer-item {
   padding: 5px 0;
-  font-size: 1.3rem;
-  color: #34495e;
+  color: #7a7979;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
@@ -427,7 +437,7 @@ p {
   }
 
   .offer-right {
-    padding: 10px 0 10px 0;
+    padding: 0px 0 10px 0;
   }
 
   .offer-title {
@@ -510,7 +520,7 @@ p {
 
 /*========= 💻 CAREER SECTION ============= */
 .career-box {
-  padding: 100px 20px 100px 20px;
+  padding: 50px 20px 100px 20px;
 }
 
 .career-content {
